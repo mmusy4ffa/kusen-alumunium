@@ -1,7 +1,7 @@
-# Product Requirement Document (PRD) - Website KUSEN ALUMUNIUM Malang
+# Product Requirement Document (PRD) - Website KUSEN ALUMINIUM Malang
 
 ## 1. Overview Project
-* **Nama Website:** KUSEN ALUMUNIUM (Kusen Aluminium Precision Malang)
+* **Nama Website:** KUSEN ALUMINIUM (Kusen Aluminium Precision Malang)
 * **Tujuan:** Menghadirkan platform digital profesional & interaktif untuk memasarkan jasa aplikator & fabrikasi kusen aluminium, jendela casement, pintu lipat (folding door), pintu sliding, dan partisi kaca kantor di wilayah **Malang Raya, Kota Malang, Kabupaten Malang, Kota Batu, Pasuruan, Kediri, Surabaya, dan Jawa Timur**.
 * **Teknologi Stack:** HTML5, CSS3 Custom (Vanilla CSS Design Tokens), Bootstrap 5.3 CDN, Bootstrap Icons, Vanilla JavaScript.
 
@@ -14,7 +14,7 @@
 ---
 
 ## 3. Brand Identity & Design System
-* **Brand Name:** **KUSEN ALUMUNIUM** (Kusen Aluminium Precision Malang)
+* **Brand Name:** **KUSEN ALUMINIUM** (Kusen Aluminium Precision Malang)
 * **Visual Palette:**
   * **Primary Dark Maroon:** `#3B0B0C` (Nav Topbar, Hero Overlay, Footer)
   * **Accent Warm Bronze/Copper:** `#C07D3B` (CTA Buttons, Icons, Highlight Badges)

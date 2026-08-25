@@ -1,10 +1,10 @@
 /**
- * KUSEN ALUMUNIUM - Main JavaScript Logic
+ * KUSEN ALUMINIUM - Main JavaScript Logic
  * Stack: Vanilla JS + Bootstrap 5.3 Native APIs + Lightbox Zoom + Floating Back to Top Button
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('KUSEN ALUMUNIUM JavaScript Initialized');
+  console.log('KUSEN ALUMINIUM JavaScript Initialized');
 
   // Initialize Scroll Reveal Animations
   initScrollReveal();
@@ -164,7 +164,7 @@ function initEstimatorForm() {
     const formattedCost = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(estimatedCost);
 
     const phoneNo = '6288989643555'; 
-    const message = `Halo KUSEN ALUMUNIUM Malang, saya ingin berkonsultasi & meminta penawaran harga resmi:
+    const message = `Halo KUSEN ALUMINIUM Malang, saya ingin berkonsultasi & meminta penawaran harga resmi:
 
 📌 *Detail Pesanan Estimasi:*
 • Jenis Produk: ${productType}
@@ -239,7 +239,7 @@ function highlightActiveNav() {
  */
 function quickWAOrder(productName, specInfo) {
   const phoneNo = '6288989643555';
-  const message = `Halo CS KUSEN ALUMUNIUM Malang, saya tertarik dengan produk *${productName}* (${specInfo}). Boleh tolong diinfokan estimasi harga dan pilihan spesifikasinya? Terima kasih!`;
+  const message = `Halo CS KUSEN ALUMINIUM Malang, saya tertarik dengan produk *${productName}* (${specInfo}). Boleh tolong diinfokan estimasi harga dan pilihan spesifikasinya? Terima kasih!`;
   const waURL = `https://wa.me/${phoneNo}?text=${encodeURIComponent(message)}`;
   window.open(waURL, '_blank');
 }

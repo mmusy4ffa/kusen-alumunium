@@ -1,7 +1,7 @@
-# SEO Strategy & Content Pillar Roadmap - KUSEN ALUMUNIUM Malang
+# SEO Strategy & Content Pillar Roadmap - KUSEN ALUMINIUM Malang
 
 ## 1. Executive Summary & Market Positioning
-* **Brand Name:** KUSEN ALUMUNIUM (Kusen Aluminium Precision Malang)
+* **Brand Name:** KUSEN ALUMINIUM (Kusen Aluminium Precision Malang)
 * **Target Geographic Region:** Malang Raya (Kota Malang, Kabupaten Malang, Kota Batu), Pasuruan, Kediri, Surabaya, dan Jawa Timur.
 * **Core Competency:** Fabrikasi & pemasangan presisi kusen aluminium, jendela casement, pintu lipat (folding door), pintu sliding minimalis, dan partisi kaca kantor.
 
@@ -32,7 +32,7 @@
    {
      "@context": "https://schema.org",
      "@type": "HomeAndConstructionBusiness",
-     "name": "KUSEN ALUMUNIUM Malang",
+     "name": "KUSEN ALUMINIUM Malang",
      "address": {
        "@type": "PostalAddress",
        "streetAddress": "Jl. Raya Malang Industri No. 88, Lowokwaru",
