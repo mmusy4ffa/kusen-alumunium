@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize Gallery Lightbox Zoom Modal
   initLightboxModal();
 
+  // Initialize Transparent to Solid Scroll Navbar
+  initNavbarScroll();
+
+  // Initialize Testimonial Automatic Swiper Carousel
+  initTestimonialSwiper();
+
   // Initialize Floating Back to Top Button
   initBackToTop();
 });
@@ -243,3 +249,55 @@ function quickWAOrder(productName, specInfo) {
   const waURL = `https://wa.me/${phoneNo}?text=${encodeURIComponent(message)}`;
   window.open(waURL, '_blank');
 }
+
+/**
+ * Transparent Navbar Scroll Handler
+ * Switches navbar from transparent over Hero to solid warm cream on scroll
+ */
+function initNavbarScroll() {
+  const navbar = document.querySelector('.navbar-alu');
+  if (!navbar) return;
+
+  const handleScroll = () => {
+    if (window.scrollY > 40) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  handleScroll(); // Check initial state
+}
+
+/**
+ * Initialize Automatic Testimonial Swiper Carousel
+ */
+function initTestimonialSwiper() {
+  if (typeof Swiper !== 'undefined' && document.querySelector('.testimonialSwiper')) {
+    new Swiper('.testimonialSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.testimonial-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        }
+      }
+    });
+  }
+}
+

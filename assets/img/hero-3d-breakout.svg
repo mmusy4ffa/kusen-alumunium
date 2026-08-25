@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4efe6" />
+      <stop offset="100%" stop-color="#e2d8c3" />
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.7)" />
+      <stop offset="100%" stop-color="rgba(200,225,240,0.4)" />
+    </linearGradient>
+    <linearGradient id="gardenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#88b04b" />
+      <stop offset="100%" stop-color="#385e2b" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Wall & Garden View -->
+  <rect width="800" height="550" fill="url(#bgGrad)" />
+  
+  <!-- Garden Outdoors via Glass Door -->
+  <rect x="60" y="50" width="680" height="420" fill="url(#gardenGrad)" rx="8" />
+  <circle cx="200" cy="180" r="90" fill="#a0d468" opacity="0.6" />
+  <circle cx="580" cy="220" r="110" fill="#a0d468" opacity="0.5" />
+  <circle cx="380" cy="140" r="70" fill="#c0ebb0" opacity="0.4" />
+  
+  <!-- Aluminum Frame (Outer) -->
+  <rect x="50" y="40" width="700" height="440" fill="none" stroke="#222222" stroke-width="16" rx="4" />
+  
+  <!-- Glass Panels -->
+  <rect x="68" y="58" width="215" height="404" fill="url(#glassGrad)" stroke="#333333" stroke-width="8" />
+  <rect x="291" y="58" width="215" height="404" fill="url(#glassGrad)" stroke="#333333" stroke-width="8" />
+  <rect x="514" y="58" width="218" height="404" fill="url(#glassGrad)" stroke="#333333" stroke-width="8" />
+
+  <!-- Aluminum Door Handles & Rails -->
+  <rect x="265" y="230" width="10" height="70" fill="#c07d3b" rx="3" />
+  <rect x="300" y="230" width="10" height="70" fill="#c07d3b" rx="3" />
+  <line x1="50" y1="476" x2="750" y2="476" stroke="#c07d3b" stroke-width="6" />
+
+  <!-- Modern Floor Reflection -->
+  <rect x="0" y="480" width="800" height="70" fill="#d5caa8" />
+  <path d="M60 480 L180 550 L620 550 L740 480 Z" fill="rgba(255,255,255,0.25)" />
+</svg>
