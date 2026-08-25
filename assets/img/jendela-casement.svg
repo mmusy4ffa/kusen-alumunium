@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <rect width="600" height="400" fill="#eef2f5" />
+  <rect x="100" y="50" width="400" height="300" fill="none" stroke="#222222" stroke-width="12" rx="4" />
+  <rect x="120" y="70" width="170" height="260" fill="rgba(255,255,255,0.8)" stroke="#c07d3b" stroke-width="6" />
+  <polygon points="310,70 470,90 470,310 310,330" fill="rgba(200,225,245,0.7)" stroke="#c07d3b" stroke-width="6" />
+  <circle cx="450" cy="200" r="8" fill="#3b0b0c" />
+  <text x="300" y="380" font-family="Plus Jakarta Sans, sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">JENDELA CASEMENT ALEXINDO</text>
+</svg>
