@@ -3,4 +3,4 @@ Allow: /
 Disallow: /assets/img/private/
 
 # Sitemap Location
-Sitemap: https://kusenaluminium-malang.vercel.app/sitemap.xml
+Sitemap: https://kusenaluminium.web.id/sitemap.xml

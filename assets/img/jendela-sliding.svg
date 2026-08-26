@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
-  <rect width="600" height="400" fill="#f0f4f8" />
-  <rect x="100" y="60" width="400" height="280" fill="none" stroke="#222222" stroke-width="10" rx="4" />
-  <rect x="115" y="75" width="180" height="250" fill="rgba(255,255,255,0.8)" stroke="#555555" stroke-width="6" />
-  <rect x="285" y="75" width="200" height="250" fill="rgba(192,125,59,0.2)" stroke="#c07d3b" stroke-width="6" />
-  <text x="300" y="375" font-family="Plus Jakarta Sans, sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">JENDELA SLIDING 2 DAUN</text>
-</svg>
