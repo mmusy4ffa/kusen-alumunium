@@ -29,6 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize Floating Back to Top Button
   initBackToTop();
+
+  // Initialize Article FAQ Mini Accordion
+  initArticleFAQ();
+
+  // Initialize Article Share Buttons
+  initShareButtons();
 });
 
 /**
@@ -229,10 +235,12 @@ function initProductFilter() {
 function highlightActiveNav() {
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
   const navLinks = document.querySelectorAll('.navbar-alu .nav-link');
+  const isArticlePage = currentPath.endsWith('.html') && 
+                        !['index.html', 'tentang-kami.html', 'portofolio.html', 'galeri.html', 'blog.html'].includes(currentPath);
 
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
-    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
+    if (href === currentPath || (currentPath === '' && href === 'index.html') || (isArticlePage && href === 'blog.html')) {
       link.classList.add('active');
     } else {
       link.classList.remove('active');
@@ -301,3 +309,78 @@ function initTestimonialSwiper() {
   }
 }
 
+/**
+ * Article FAQ Accordion Interactive Toggle
+ */
+function initArticleFAQ() {
+  const faqQuestions = document.querySelectorAll('.faq-mini-question');
+  if (!faqQuestions.length) return;
+
+  faqQuestions.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-mini-item');
+      if (!item) return;
+
+      const isActive = item.classList.contains('active');
+
+      // Close all items in the same container for clean accordion behavior
+      const parentContainer = item.closest('.article-faq');
+      if (parentContainer) {
+        parentContainer.querySelectorAll('.faq-mini-item').forEach(i => i.classList.remove('active'));
+      }
+
+      // Toggle clicked item
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+}
+
+/**
+ * Article Share Buttons Handler
+ */
+function initShareButtons() {
+  const shareBtns = document.querySelectorAll('.share-btn');
+  if (!shareBtns.length) return;
+
+  const currentURL = encodeURIComponent(window.location.href);
+  const currentTitle = encodeURIComponent(document.title || 'Artikel KUSEN ALUMINIUM Malang');
+
+  shareBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const platform = btn.getAttribute('data-share');
+      let shareUrl = '';
+
+      switch (platform) {
+        case 'whatsapp':
+          shareUrl = `https://wa.me/?text=${currentTitle}%20${currentURL}`;
+          break;
+        case 'facebook':
+          shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${currentURL}`;
+          break;
+        case 'twitter':
+          shareUrl = `https://twitter.com/intent/tweet?text=${currentTitle}&url=${currentURL}`;
+          break;
+        case 'linkedin':
+          shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${currentURL}`;
+          break;
+        default:
+          if (navigator.share) {
+            navigator.share({
+              title: document.title,
+              url: window.location.href
+            }).catch(() => {});
+            return;
+          }
+          break;
+      }
+
+      if (shareUrl) {
+        window.open(shareUrl, '_blank', 'width=600,height=500');
+      }
+    });
+  });
+}
